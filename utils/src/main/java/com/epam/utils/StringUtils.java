@@ -2,6 +2,9 @@ package com.epam.utils;
 
 public class StringUtils {
     public static boolean isPositiveNumber(String str) {
-        //code!
+        if (org.apache.commons.lang3.StringUtils.isNumeric(str)){
+            return Integer.parseInt(str) > 0;
+        }
+        return false;
     }
 }
